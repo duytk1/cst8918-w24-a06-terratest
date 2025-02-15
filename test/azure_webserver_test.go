@@ -2,7 +2,6 @@ package test
 
 import (
 	"testing"
-
 	"github.com/gruntwork-io/terratest/modules/azure"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -11,9 +10,9 @@ import (
 func TestAzureLinuxVMCreation(t *testing.T) {
 	t.Parallel()
 
-	subscriptionID := "your-azure-subscription-id"
-	resourceGroupName := "your-resource-group"
-	vmName := "your-vm-name"
+	subscriptionID := "6799aad2-f70b-451b-981c-b85924560ee6"
+	resourceGroupName := "cst8918-rg"
+	vmName := "VM1"
 
 	// Verify VM exists
 	vm, err := azure.GetVirtualMachineE(subscriptionID, resourceGroupName, vmName)
